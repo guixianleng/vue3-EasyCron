@@ -1,0 +1,68 @@
+.easy-cron-inner {
+  .content {
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+      margin-left: 0;
+    }
+  }
+
+  &-config-list {
+    text-align: left;
+    margin: 0 10px 10px 10px;
+
+    .el-radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item {
+      margin-top: 5px;
+      font-size: 14px;
+      width: 100%;
+
+      span {
+        padding: 0 2px;
+      }
+    }
+
+    .choice {
+      padding: 5px 8px;
+    }
+
+    .w60 {
+      width: 100px;
+      min-width: 100px;
+    }
+
+    .w80 {
+      width: 80px;
+      min-width: 80px;
+    }
+
+    .list {
+      margin: 0 20px;
+    }
+
+    .list-check-item {
+      padding: 1px 3px;
+      width: 4em;
+    }
+
+    .list-cn .list-check-item {
+      width: 5em;
+    }
+
+    .tip-info {
+      color: #999;
+    }
+  }
+
+  .ten-times {
+    font-size: 14px;
+    color: #313131;
+    margin: 5px 0 3px;
+  }
+
+  .allow-click {
+    cursor: pointer;
+  }
+}

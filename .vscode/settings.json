@@ -1,0 +1,172 @@
+{
+  //========================================
+  //============== 编辑器 ===================
+  //========================================
+  // 光标的动画样式
+  "editor.cursorBlinking": "phase",
+  // 光标是否启用平滑插入的动画
+  "editor.cursorSmoothCaretAnimation": true,
+  // vscode重命名文件或移动文件自动更新导入路径
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // 自动替换为当前项目的内置的typescript版本
+  "typescript.tsdk": "./node_modeles/typescript/lib",
+  // 一个制表符占的空格数(可能会被覆盖)
+  "editor.tabSize": 2,
+  // 定义一个默认和的格式程序 (prettier)
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 取消差异编辑器忽略前空格和尾随空格的更改
+  "diffEditor.ignoreTrimWhitespace": false,
+  // 定义函数参数括号前的处理方式
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // 在键入的时候是否启动快速建议
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  //========================================
+  //============== Other ===================
+  //========================================
+  // 启用导航路径
+  "breadcrumbs.enabled": true,
+  //========================================
+  //============== Other ===================
+  //========================================
+  // 按下Tab键展开缩写 （例如Html的div,在键入的时候按Tab，快捷生成出来）
+  "emmet.triggerExpansionOnTab": true,
+  // 建议是否缩写 (如Html的<div />)
+  "emmet.showAbbreviationSuggestions": true,
+  // 建议是否展开 （如Html的 <div></div>）
+  "emmet.showExpandedAbbreviation": "always",
+  // 为制定语法文件定义当前的语法规则
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html",
+    "xml": {
+      "arrt_quotes": "single"
+    }
+  },
+  // 在不受支持的语言中添加规则映射
+  "emmet.includeLanguages": {
+    "jsx-sublime-babel-tags": "javascriptreact"
+  },
+  //========================================
+  //============== Files ==================
+  //========================================
+  // 删除行位空格
+  "files.trimTrailingWhitespace": true,
+  // 末尾插入一个新的空格
+  "files.insertFinalNewline": true,
+  // 删除新行后面的所有新行
+  "files.trimFinalNewlines": true,
+  // 默认行尾的字符
+  "files.eol": "\n",
+  // 在查找搜索的时候集成的文件
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.log": true,
+    "**/*.log*": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/elehukouben": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "**/tmp": true,
+    "out": true,
+    "dist": true,
+    "node_modules": true,
+    "CHANGELOG.md": true,
+    "examples": true,
+    "res": true,
+    "screenshots": true
+  },
+  // 搜索文件夹时候排外的文件夹
+  "files.exclude": {
+    "**/bower_components": true,
+    "**/.idea": true,
+    "**/tmp": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": false
+  },
+  // 文件监视器排外的文件 可减少初始化打开项目的占用大量cpu
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.vscode/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true,
+    "**/yarn.lock": true
+  },
+  "stylelint.enable": true,
+  "stylelint.packageManager": "yarn",
+  //========================================
+  //============== Eslint ==================
+  //========================================
+  // 状态栏显示Eslint的开启状态
+  "eslint.alwaysShowStatus": true,
+  // Eslint的选项
+  "eslint.options": {
+    // 要检查的文件拓展名数组
+    "extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
+  },
+  // Eslint校验的
+  "eslint.validate": ["javascript", "typescript", "reacttypescript", "reactjavascript", "html", "vue"],
+  //========================================
+  //============== Prettier ================
+  //========================================
+  //  使用当前项目的prettier配置文件，如果没有则使用默认的配置
+  "prettier.requireConfig": true,
+  "editor.formatOnSave": true,
+  // 以下程序使用prettier默认进行格式化
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 保存文件的时候的配置
+  "editor.codeActionsOnSave": {
+    // 使用Eslint格式化代码
+    "source.fixAll.eslint": true,
+    // 使用stylelint格式化代码
+    "source.fixAll.stylelint": true
+  },
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      // 使用Eslint格式化代码
+      "source.fixAll.eslint": true,
+      // 使用stylelint格式化代码
+      "source.fixAll.stylelint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
