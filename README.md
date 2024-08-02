@@ -4,7 +4,7 @@ easy-cron 是基于 `Vue3.js` 和 `element-plus` 实现 crontab 表达式的 UI 
 
 ![图片示例](./src/assets/1.jpg)
 
-### 使用 Gitpod 打开
+### 使用 Gitpod
 
 在 Gitpod（适用于 GitHub 的免费在线开发环境）中打开项目，并立即开始编码.
 
